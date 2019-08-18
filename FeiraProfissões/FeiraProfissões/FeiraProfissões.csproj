@@ -170,6 +170,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagens\background.jpg" />
+    <Content Include="Imagens\feiraLogo.jpeg" />
+    <Content Include="Imagens\ISNSF-890x395.png" />
+    <Content Include="Imagens\logo.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

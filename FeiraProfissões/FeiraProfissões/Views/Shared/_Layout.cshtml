@@ -9,34 +9,103 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nome do aplicativo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Início", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Sobre", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Feira", "Index", "Feira")</li>
-                    <li>@Html.ActionLink("Avaliacao", "Avaliacao", "Feira")</li>
-                </ul>
+        <div class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Feira", "Index", "Feira")</li>
+                            <li>@Html.ActionLink("Avaliacao", "Avaliacao", "Feira")</li>
+                        </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
-        </footer>
-    </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer id="colophon" class="thim-right-bg-secondary-color thim-footer-university-4 site-footer">
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <aside id="thim_layout_builder-3" class="widget widget_thim_layout_builder footer_widget">
+                                <style>
+                                    .vc_custom_1483604405046 {
+                                        margin-bottom: 30px !important;
+                                    }
+                                </style><div class="vc_row wpb_row vc_row-fluid vc_custom_1483604405046">
+                                    <div class="wpb_column vc_column_container vc_col-sm-8">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="thim-footer-info-4">
+                                                            <div class="footer-logo"><img class="alignnone size-full wp-image-10" src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/logo.png" alt="logo-eduma-the-best-lms-wordpress-theme" width="150" height="200" id="footLogo"/></div>
+                                                            <div class="info">
+                                                                <h4 class="heading"><span>Instituto Social </span> NOSSA SENHORA DE FÁTIMA</h4>
+                                                                <div class="content">
+                                                                    <p class="desc">A Ação Social, divide-se em vários grupos de atividades, todas no sentido de assistir a comunidade, tendo como pilastra o Ser Humano desde a infância, seguindo com a juventude, na preparação do Caminho para Maioridade (Cidadania).</p>
+                                                                    <ul class="contact-list">
+                                                                        <li class="address"><i class="fa fa-home"></i>RUA AVE MARIA, 78 JD VELEIROS SÃO PAULO-SP </li>
+                                                                        <li class="phone"><i class="fa fa-phone"></i>TEL: (11)5687-8876 /(11)3798-5036</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"></div></div></div>
+                                </div><div class="vc_row wpb_row vc_row-fluid row-sm-padding-left-210">
+                                    <div class="wpb_column vc_column_container vc_col-sm-8">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                                    <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_wp_custommenu wpb_content_element"></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4">
+                                                        <div class="vc_column-inner ">
+                                                            <div class="wpb_wrapper">
+                                                                <div class="thim-widget-social">
+                                                                    <div class="thim-social style-3">
+                                                                        <h3 class="widget-title">Siga-nos</h3> <ul class="social_link">
+                                                                            <li><a class="facebook hasTooltip" href="#" target="_self"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                                                            <li><a class="twitter hasTooltip" href="https://twitter.com/?lang=pt-br" target="_self"><i class="fa fa-twitter"></i>Twitter</a></li>
+                                                                            <li><a class="instagram hasTooltip" href="https://www.instagram.com/acaonsfatima/?hl=pt-br" target="_self"><i class="fa fa-instagram"></i>Instagram</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="text-center thim-newsletter wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"></div></div></div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="copyright-content">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="text-copyright">
+                                        </a> © 2018 Todos os Direitos estão reservados para Nossa senhora de Fátima - <a href="http://http://toudyconnect.com.br/" target="_blank"></a> TOUDY CONNECT
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
