@@ -24,71 +24,20 @@ textarea {
 .estrelas label i.fa:before {
     content: '★';
     color: #FC0;
-}.estrelas input[type=radio]:checked ~ label i.fa:before{
-     color: #CCC;
 }
 
 footer#colophon {
     background: #222;
 }
-footer#colophon {
-    background-repeat: no-repeat;
-}
-.thim-right-bg-secondary-color {
-    overflow: hidden;
-    position: relative;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-body, .breadcrumbs-wrapper .woocommerce-breadcrumb, .breadcrumbs-wrapper .thim-breadcrumbs, .breadcrumbs-wrapper .woocommerce-breadcrumb a, .breadcrumbs-wrapper .thim-breadcrumbs a, .breadcrumbs-wrapper #breadcrumbs li a, .breadcrumbs-wrapper #breadcrumbs li, .product-cat li a, .quickview .quick-view-detail, .filter-controls li a, .product-cat li a, .woocommerce div.product .woocommerce-review-link, .woocommerce div.product .product_meta a, .question-hint .quiz-hint-toggle .fa, .profile-container .profile-tabs .tab-content .thim-course-grid .cert-profile-view, .profile-container .profile-tabs .tab-content .thim-course-grid .cert-profile-view:hover, .breadcrumbs-wrapper #breadcrumbs a, #buddypress div#item-header .item-meta, .thim-widget-portfolio .wapper_portfolio .filters .portfolio-tabs li a.filter, .portfolio_container .wapper_portfolio .filters .portfolio-tabs li a.filter {
-    color: #666;
-}
-.mfp-arrow, .owl-controls, html {
-    -webkit-tap-highlight-color: transparent;
-}
 
-.thim-right-bg-secondary-color:before, .thim-left-full-bg-secondary-color:before, .list-event-slider .item-event .event-wrapper .box-time:after, .thim-simple-wrapper .navigation div:hover {
-    background: #1e73be;
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.thim-footer-university-4#colophon:after {
-    content: '';
-    position: absolute;
-    width: 99px;
-    height: 213px;
-    bottom: 0;
-    right: calc(50% - 585px);
-}
-*, :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-::selection {
-    background-color: #fa394a;
+body{
+    color: #666;
 }
 
 #freiLogo{
     height: 200px;
     width: 150px;
     margin-top: 50px;
-}
-
-#feiraLogo {
-    height: 200px;
-    width: 185px;
-    margin-top: 50px;
-}
-
-#feiraLogo {
-    margin-left: 40px;
 }
 
 #footLogo{
@@ -100,4 +49,37 @@ body, .breadcrumbs-wrapper .woocommerce-breadcrumb, .breadcrumbs-wrapper .thim-b
 #instituto{
     height: 240px;
     width: 470px;
+}
+
+::selection {
+    background-color: #fa394a;
+    color: #fff !important;
+}
+
+#FeiraTitulo {
+    width: 470px;
+}
+
+#programacaoTitulo{
+    color: steelblue;
+}
+
+#terreo, #primeiroAndar, #segundoAndar, #terceiroAndar {
+    width: 470px;
+}
+
+#terreo:hover {
+    opacity: 0.6;
+}
+
+#primeiroAndar:hover {
+    opacity: 0.6;
+}
+
+#segundoAndar:hover {
+    opacity: 0.6;
+}
+
+#terceiroAndar:hover {
+    opacity: 0.6;
 }
