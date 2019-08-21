@@ -173,11 +173,16 @@
     <Content Include="Imagens\1Andar.jpg" />
     <Content Include="Imagens\2Andar.jpg" />
     <Content Include="Imagens\3Andar.jpg" />
+    <Content Include="Imagens\carteira de trabalho.jpg" />
+    <Content Include="Imagens\feira anuncio.jpg" />
     <Content Include="Imagens\feiraLogo.jpeg" />
     <Content Include="Imagens\feiraTitulo.jpg" />
     <Content Include="Imagens\ISNSF-890x395.png" />
     <Content Include="Imagens\logo.png" />
+    <Content Include="Imagens\parceiros.png" />
+    <Content Include="Imagens\programacao.png" />
     <Content Include="Imagens\Terreo.jpg" />
+    <Content Include="Imagens\teste vocacional.jpg" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
