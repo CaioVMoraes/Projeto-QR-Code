@@ -4,17 +4,14 @@
 }
 
 <center>
-    <a href='@Url.Action("Index", "Feira")'><img id="FeiraTitulo" src="~/Imagens/feiraTitulo.jpg" class="bounceInDown" /></a>
-    <!-- Slideshow container -->
     <div class="slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 4</div>
-            <img src="~/Imagens/feira anuncio.jpg" style="width:100%">
+            <img src="" style="width:100%">
         </div>
 
-        @*<div class="mySlides fade">
+       <div class="mySlides fade">
             <div class="numbertext">2 / 4</div>
             <img src="" style="width:100%">
         </div>
@@ -26,16 +23,16 @@
         <div class="mySlides fade">
             <div class="numbertext">4 / 4</div>
             <img src="" style="width:100%">
-        </div>*@
+        </div>
     </div>
     <br>
 
     <!-- The dots/circles -->
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
-        @*<span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>*@
+        <span class="dot" onclick="currentSlide(4)"></span>
 
     </div>
 </center>
@@ -50,18 +47,6 @@
     <p><strong>Evento gratuito! Não perca!</strong></p>
     <p>&nbsp;</p>
 </div>
-
-<center>
-    <h2 id="programacaoTitulo">PROGRAMAÇÃO</h2>
-
-    <a href='@Url.Action("Index", "Feira")'><img id="terreo" src="~/Imagens/Terreo.jpg" class="bounceInLeft" /> </a>
-
-    <a href='@Url.Action("Index", "Feira")'><img id="primeiroAndar" src="~/Imagens/1Andar.jpg" class="bounceInRight" /></a>
-
-    <a href='@Url.Action("Index", "Feira")'><img id="segundoAndar" src="~/Imagens/2Andar.jpg" class="bounceInLeft" /></a>
-
-    <a href='@Url.Action("Index", "Feira")'><img id="terceiroAndar" src="~/Imagens/3Andar.jpg" class="bounceInRight" /></a>
-</center>
 
 <script>
     var slideIndex = 0;
@@ -81,6 +66,6 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 2000);
+        setTimeout(showSlides, 3000);
     }
 </script>
