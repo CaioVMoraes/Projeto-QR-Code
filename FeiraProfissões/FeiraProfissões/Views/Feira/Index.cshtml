@@ -4,7 +4,7 @@
 }
 
 <center>
-    <a href='@Url.Action("Index", "Feira")'><img id="FeiraTitulo" src="~/Imagens/feiraTitulo.jpg" class=" animated bounceInDown" /></a>
+    <a href='@Url.Action("Index", "Feira")'><img id="FeiraTitulo" src="~/Imagens/feiraTitulo.jpg" class="bounceInDown" /></a>
     <!-- Slideshow container -->
     <div class="slideshow-container">
 
@@ -14,7 +14,7 @@
             <img src="~/Imagens/feira anuncio.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides fade">
+        @*<div class="mySlides fade">
             <div class="numbertext">2 / 4</div>
             <img src="" style="width:100%">
         </div>
@@ -26,16 +26,16 @@
         <div class="mySlides fade">
             <div class="numbertext">4 / 4</div>
             <img src="" style="width:100%">
-        </div>
+        </div>*@
     </div>
     <br>
 
     <!-- The dots/circles -->
     <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
+        @*<span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>*@
 
     </div>
 </center>
@@ -54,13 +54,13 @@
 <center>
     <h2 id="programacaoTitulo">PROGRAMAÇÃO</h2>
 
-    <a href='@Url.Action("Index", "Feira")'><img id="terreo" src="~/Imagens/Terreo.jpg" class="animated bounceInLeft" /> </a>
+    <a href='@Url.Action("Index", "Feira")'><img id="terreo" src="~/Imagens/Terreo.jpg" class="bounceInLeft" /> </a>
 
-    <a href='@Url.Action("Index", "Feira")'><img id="primeiroAndar" src="~/Imagens/1Andar.jpg" class="animated bounceInRight" /></a>
+    <a href='@Url.Action("Index", "Feira")'><img id="primeiroAndar" src="~/Imagens/1Andar.jpg" class="bounceInRight" /></a>
 
-    <a href='@Url.Action("Index", "Feira")'><img id="segundoAndar" src="~/Imagens/2Andar.jpg" class="animated bounceInLeft" /></a>
+    <a href='@Url.Action("Index", "Feira")'><img id="segundoAndar" src="~/Imagens/2Andar.jpg" class="bounceInLeft" /></a>
 
-    <a href='@Url.Action("Index", "Feira")'><img id="terceiroAndar" src="~/Imagens/3Andar.jpg" class="animated bounceInRight" /></a>
+    <a href='@Url.Action("Index", "Feira")'><img id="terceiroAndar" src="~/Imagens/3Andar.jpg" class="bounceInRight" /></a>
 </center>
 
 <script>
@@ -68,19 +68,19 @@
     showSlides();
 
     function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 2000);
+        //var i;
+        //var slides = document.getElementsByClassName("mySlides");
+        //var dots = document.getElementsByClassName("dot");
+        //for (i = 0; i < slides.length; i++) {
+        //    slides[i].style.display = "none";
+        //}
+        //slideIndex++;
+        //if (slideIndex > slides.length) { slideIndex = 1 }
+        //for (i = 0; i < dots.length; i++) {
+        //    dots[i].className = dots[i].className.replace(" active", "");
+        //}
+        //slides[slideIndex - 1].style.display = "block";
+        //dots[slideIndex - 1].className += " active";
+        //setTimeout(showSlides, 2000);
     }
 </script>
