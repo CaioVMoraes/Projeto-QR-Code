@@ -164,6 +164,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\andar1.css" />
+    <Content Include="Imagens\igmTerreo.jpg" />
+    <Content Include="Imagens\img1Andar.jpg" />
+    <Content Include="Imagens\img2Andar.jpg" />
+    <Content Include="Imagens\img3Andar.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

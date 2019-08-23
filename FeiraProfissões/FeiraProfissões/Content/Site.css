@@ -109,3 +109,13 @@ body{
     background-color: #fa394a;
     color: #fff !important;
 }
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.slideshow-container, .salas {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
