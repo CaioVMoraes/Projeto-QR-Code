@@ -164,10 +164,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\andar1.css" />
-    <Content Include="Imagens\igmTerreo.jpg" />
-    <Content Include="Imagens\img1Andar.jpg" />
-    <Content Include="Imagens\img2Andar.jpg" />
-    <Content Include="Imagens\img3Andar.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -179,10 +175,13 @@
     <Content Include="Imagens\dicas-de-apresentacao-1200x480.png" />
     <Content Include="Imagens\feira anuncio.jpg" />
     <Content Include="Imagens\feiraLogo.jpeg" />
+    <Content Include="Imagens\igmTerreo.jpg" />
+    <Content Include="Imagens\img1Andar.jpg" />
+    <Content Include="Imagens\img2Andar.jpg" />
+    <Content Include="Imagens\img3Andar.jpg" />
     <Content Include="Imagens\logo.png" />
     <Content Include="Imagens\parceiros.png" />
     <Content Include="Imagens\programacao.png" />
-    <Content Include="Imagens\teste vocacional.jpg" />
     <Content Include="Imagens\Vocação.jpg" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

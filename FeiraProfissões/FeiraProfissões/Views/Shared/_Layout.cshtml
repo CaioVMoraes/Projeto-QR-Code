@@ -17,16 +17,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <span class="navbar-brand">Instituto Social NSF</span>
+                <span class="navbar-brand" style="color:lightgray" >Instituto Social NSF</span>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Feira", "Index", "Feira")</li>
-                    <li>@Html.ActionLink("Térreo", "Terreo", "Feira")</li>
-                    <li>@Html.ActionLink("1º Andar", "PrimeiroAndar", "Feira")</li>
-                    <li>@Html.ActionLink("2º Andar", "SegundoAndar", "Feira")</li>
-                    <li>@Html.ActionLink("3º Andar", "TerceiroAndar", "Feira")</li>
-                    <li>@Html.ActionLink("Avaliacao", "Avaliacao", "Feira")</li>
+                    <li>@Html.ActionLink("Feira", "Index", "Feira", new { style = "color:lightgray;" })</li>
+                    <li>@Html.ActionLink("Térreo", "Terreo", "Feira", new { style = "color:lightgray;" })</li>
+                    <li>@Html.ActionLink("1º Andar", "PrimeiroAndar", "Feira", new { style = "color:lightgray;" })</li>
+                    <li>@Html.ActionLink("2º Andar", "SegundoAndar", "Feira", new { style = "color:lightgray;" })</li>
+                    <li>@Html.ActionLink("3º Andar", "TerceiroAndar", "Feira", new { style = "color:lightgray;" })</li>
+                    <li>@Html.ActionLink("Avaliacao", "Avaliacao", "Feira", new { style = "color:lightgray;" })</li>
                 </ul>
             </div>
         </div>
@@ -37,40 +37,62 @@
 
     </div>
 
-    <footer id="colophon" class="thim-right-bg-secondary-color thim-footer-university-4 site-footer">
-        <div class="footer">
-
-            <div class="footer-logo">
-                <img class="alignnone size-full wp-image-10" src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/logo.png" alt="logo-eduma-the-best-lms-wordpress-theme" width="150" height="200" id="footLogo" />
-            </div>
-
-            <div class="info">
-                <h4 class="heading"><span>Instituto Social </span> NOSSA SENHORA DE FÁTIMA</h4>
-                <div class="content">
-                    <p class="desc">A Ação Social, divide-se em vários grupos de atividades, todas no sentido de assistir a comunidade, tendo como pilastra o Ser Humano desde a infância, seguindo com a juventude, na preparação do Caminho para Maioridade (Cidadania).</p>
-                    <ul class="contact-list">
-                        <li class="address"><i class="fa fa-home"></i>RUA AVE MARIA, 78 JD VELEIROS SÃO PAULO-SP </li>
-                        <li class="phone"><i class="fa fa-phone"></i>TEL: (11)5687-8876 /(11)3798-5036</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h3 class="widget-title">Siga-nos</h3>
-            <ul class="social_link">
-                <li><a class="facebook hasTooltip" href="https://www.facebook.com/Instituto-Social-Nossa-Senhora-de-F%C3%A1tima-230903353703049/" target="_self"><i class="fa fa-facebook"></i>Facebook</a></li>
-                <li><a class="twitter hasTooltip" href="https://twitter.com/?lang=pt-br" target="_self"><i class="fa fa-twitter"></i>Twitter</a></li>
-                <li><a class="instagram hasTooltip" href="https://www.instagram.com/acaonsfatima/?hl=pt-br" target="_self"><i class="fa fa-instagram"></i>Instagram</a></li>
+    <footer id="colophon">
+        <br />
+        <div style="float:right; margin-right:40px;">
+            <h6 style="font-size:14px; margin-left:40px">Menu</h6>
+            <ul>
+                <li>@Html.ActionLink("Térreo", "Terreo", "Feira", new { style = "color:lightgray;" })</li>
+                <li>@Html.ActionLink("1º Andar", "PrimeiroAndar", "Feira", new { style = "color:lightgray;" })</li>
+                <li>@Html.ActionLink("2º Andar", "SegundoAndar", "Feira", new { style = "color:lightgray;" })</li>
+                <li>@Html.ActionLink("3º Andar", "TerceiroAndar", "Feira", new { style = "color:lightgray;" })</li>
             </ul>
-            <div class="copyright-content">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <p class="text-copyright">
-                            © 2018 Todos os Direitos estão reservados para Nossa senhora de Fátima
-                        </p>
-                    </div>
-                </div>
+        </div>
+
+        <div style="text-align:left">
+            <h6 style="font-size:14px; margin-left: 40px;">Cursos</h6>
+            <ul>
+                <li>Eletromecanica</li>
+                <li>Técnico em Administração</li>
+                <li>Eletrotécnica</li>
+                <li>Secreteraido</li>
+                <li>Técinco em Informatica</li>
+                <li>Técnico em Comunicação Visual</li>
+            </ul>
+        </div>
+
+        <br />
+
+        <h6 style="font-size:14px; margin-left: 20px;">Siga-nos</h6>
+        <div style="margin-left:20px; display: flex">
+            <div>
+                <a href="https://www.facebook.com/Instituto-Social-Nossa-Senhora-de-F%C3%A1tima-230903353703049/" target="_blank" title="Facebook">
+                    <img src="https://escolapinheiro.com.br/wp-content/uploads/2018/09/if_facebook_circle_color_107175.png">
+                </a>
+            </div>
+            <div>
+                <a href="https://twitter.com/?lang=pt-br" target="_blank" title="Twitter">
+                    <img src="https://escolapinheiro.com.br/wp-content/uploads/2018/09/if_twitter_circle_color_107170.png">
+                </a>
+            </div>
+            <div class="pr-2">
+                <a href="https://www.instagram.com/acaonsfatima/?hl=pt-br" target="_blank" title="Instagram">
+                    <img src="https://escolapinheiro.com.br/wp-content/uploads/2019/03/Webp.net-resizeimage-2.png">
+                </a>
             </div>
         </div>
+
+        <br />
+
+        <div>
+        <img style="margin-left: 20px" class="pr-2" src="https://escolapinheiro.com.br/wp-content/themes/escola-pinheiro/dist/images/phone.png">
+        <span  class="d-inline-block">
+            (011) 5687-8876
+        </span>
+        </div>
+
+        <br />
+
     </footer>
 
     @Scripts.Render("~/bundles/jquery")

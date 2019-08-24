@@ -1,23 +1,25 @@
 ﻿
 @{
+    /**/
+
     ViewBag.Title = "Index";
 }
 
 <div class="slideshow-container">
 
     <div class="mySlides fade">
-        <img src="https://acaonsfatima.org.br/wp-content/uploads/2019/08/popup-1.jpg" style="width:100%; height:220px">
+        <img src="https://acaonsfatima.org.br/wp-content/uploads/2019/08/popup-1.jpg" style="width:100%; height:210px">
     </div>
 
     <div class="mySlides fade">
-        <img src="https://diocesedesantoamaro.org.br/wp-content/uploads/2018/09/ISNSF-890x395.png" style="width:100%; height:220px">
+        <img src="https://diocesedesantoamaro.org.br/wp-content/uploads/2018/09/ISNSF-890x395.png" style="width:100%; height:210px">
     </div>
 
     <div class="mySlides fade">
-        <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/plateia.jpg" style="width:100%; height:220px">
+        <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/plateia.jpg" style="width:100%; height:210px">
     </div>
     <div class="mySlides fade">
-        <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/Cambridge-6.jpg" style="width:100%; height:220px">
+        <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/Cambridge-6.jpg" style="width:100%; height:210px">
     </div>
 </div>
 
@@ -40,11 +42,27 @@
 </div>
 
 <div class="salas">
-    <img src="~/Imagens/igmTerreo.jpg" style="width:100%; height:180px" />
-    <img src="~/Imagens/img1Andar.jpg" style="width:100%; height:200px"/>
-    <img src="~/Imagens/img2Andar.jpg" style="width:100%; height:200px"/>
-    <img src="~/Imagens/img3Andar.jpg" style="width:100%; height:200px"/>
+    <a href='@Url.Action("Terreo", "Feira")'><img id="terreo" src="~/Imagens/igmTerreo.jpg" style="width:100%; height:200px" /></a>
+    <a href='@Url.Action("PrimeiroAndar", "Feira")'><img id="primeiroAndar" src="~/Imagens/img1Andar.jpg" style="width:100%" /></a>
+    <a href='@Url.Action("SegundoAndar", "Feira")'><img id="segundoAndar" src="~/Imagens/img2Andar.jpg" style="width:100%" /></a>
+    <a href='@Url.Action("TerceiroAndar", "Feira")'><img id="terceiroAndar" src="~/Imagens/img3Andar.jpg" style="width:100%" /></a>
 </div>
+
+<br />
+
+<div>
+    <img src="~/Imagens/parceiros.png" style="width:100%; height:200px" />
+</div>
+
+<br />
+
+<div class="entry-content" style="background-color: steelblue; color: lightgray; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);">
+    <p>&nbsp;</p>
+    <h1>Como Chegar</h1>
+    <p>&nbsp;</p>
+</div>
+
+    <iframe src="https://maps.google.com/maps?q=av.%20coronel%20octaviano%20costa%2C%20463&t=&z=15&ie=UTF8&iwloc=&output=embed"  height="450" frameborder="0" style="border:0; width:100%" allowfullscreen=""></iframe>
 
 <script>
     var slideIndex = 0;
@@ -64,6 +82,6 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 3000);
+        setTimeout(showSlides, 2000);
     }
 </script>
