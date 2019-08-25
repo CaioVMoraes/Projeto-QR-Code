@@ -169,9 +169,12 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Imagens\1-curriculo.jpg" />
+    <Content Include="Imagens\alternativas-para-empreendedores-que-querem-iniciar-com-investimento-baixo.jpg" />
     <Content Include="Imagens\carteira de trabalho.jpg" />
     <Content Include="Imagens\como-fazer-um-curriculo-bem-feito-790x527.jpg" />
     <Content Include="Imagens\Comunicação Visual.jpg" />
+    <Content Include="Imagens\contabilidade.jpg" />
+    <Content Include="Imagens\curso-de-informatica-basica.jpg" />
     <Content Include="Imagens\dicas-de-apresentacao-1200x480.png" />
     <Content Include="Imagens\feira anuncio.jpg" />
     <Content Include="Imagens\feiraLogo.jpeg" />
@@ -182,6 +185,7 @@
     <Content Include="Imagens\logo.png" />
     <Content Include="Imagens\parceiros.png" />
     <Content Include="Imagens\programacao.png" />
+    <Content Include="Imagens\stonks.png" />
     <Content Include="Imagens\Vocação.jpg" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -202,6 +206,7 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Imagens\empreendendorismo.webp" />
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -231,6 +236,7 @@
     <Content Include="Views\Feira\Index.cshtml" />
     <Content Include="Views\Feira\Avaliacao.cshtml" />
     <Content Include="Views\Feira\SegundoAndar.cshtml" />
+    <Content Include="Views\Feira\PrimeiroAndar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

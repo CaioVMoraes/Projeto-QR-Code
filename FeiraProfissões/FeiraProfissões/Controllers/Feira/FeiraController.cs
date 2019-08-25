@@ -30,5 +30,9 @@ namespace FeiraProfissões.Controllers.Feira
         {
             return View();
         }
+        public ActionResult PrimeiroAndar()
+        {
+            return View();
+        }
     }
 }
