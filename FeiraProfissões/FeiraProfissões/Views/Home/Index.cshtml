@@ -1,31 +1,86 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+                /**/
+
+                ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="https://acaonsfatima.org.br/wp-content/uploads/2019/08/popup-1.jpg" style="width:100%; height:210px">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="~/Imagens/ISNSF-890x395.png" style="width:100%; height:210px">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/plateia.jpg" style="width:100%; height:210px">
+    </div>
+    <div class="mySlides fade">
+        <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/Cambridge-6.jpg" style="width:100%; height:210px">
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
 </div>
+
+<br />
+
+<div class="entry-content">
+    <p>&nbsp;</p>
+    <p style="text-align: left;">O <strong>primeiro evento</strong> organizado por nós especialmente para você que tem dúvidas sobre como funciona o <strong>Mundo do Trabalho</strong>, como se comportar, o que cada área realiza e muitas outras curiosidades que te ajudarão a conhecer o ambiente profissional!</p>
+    <p>Teremos vários <strong>temas especiais</strong> com atividades interativas de cada curso (<strong>inclusive o CEDESP</strong>), <strong>Sebo</strong> com livros de diversos assuntos e livros <strong>escritos pelo próprio Frei Xavier</strong>, além dos stands de alguns dos nossos parceiros.</p>
+    <p>Veja nossa programação, marque a data na sua agenda e chame todos para participar.</p>
+    <p><strong>Evento gratuito! Não perca!</strong></p>
+    <p>&nbsp;</p>
+</div>
+
+<div class="salas">
+    <a href='@Url.Action("Terreo", "Feira")'><img id="terreo" src="~/Imagens/igmTerreo.jpg" style="width:100%" /></a>
+    <a href='@Url.Action("PrimeiroAndar", "Feira")'><img id="primeiroAndar" src="~/Imagens/img1Andar.jpg" style="width:100%" /></a>
+    <a href='@Url.Action("SegundoAndar", "Feira")'><img id="segundoAndar" src="~/Imagens/img2Andar.jpg" style="width:100%" /></a>
+    <a href='@Url.Action("TerceiroAndar", "Feira")'><img id="terceiroAndar" src="~/Imagens/img3Andar.jpg" style="width:100%" /></a>
+</div>
+
+<br />
+
+<div>
+    <img src="~/Imagens/parceiros.png" style="width:100%; height:200px" />
+</div>
+
+<br />
+
+<div class="entry-content" style="background-color: steelblue; color: white; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);">
+    <p>&nbsp;</p>
+    <h1>Como Chegar</h1>
+    <p>&nbsp;</p>
+</div>
+
+<iframe src="https://maps.google.com/maps?q=av.%20coronel%20octaviano%20costa%2C%20463&t=&z=15&ie=UTF8&iwloc=&output=embed" height="450" frameborder="0" style="border:0; width:100%" allowfullscreen=""></iframe>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000);
+    }
+</script>
