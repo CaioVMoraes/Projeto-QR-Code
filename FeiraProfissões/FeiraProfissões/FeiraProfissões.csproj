@@ -168,6 +168,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagens\2Andar.jpeg" />
+    <Content Include="Imagens\BatePapo.jpg" />
     <Content Include="Imagens\carteira de trabalho.jpg" />
     <Content Include="Imagens\como-fazer-um-curriculo-bem-feito-790x527.jpg" />
     <Content Include="Imagens\Comunicação Visual.jpg" />

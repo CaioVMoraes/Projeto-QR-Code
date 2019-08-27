@@ -55,9 +55,8 @@
 
 .figura1 {
     float: left;
-    margin: 0 10px 10px;
+    margin: 0 10px 10px ;
 }
-
 .figura2 {
     float: right;
     margin: 0 10px 10px;
@@ -80,6 +79,6 @@
     padding-right: 0.5cm;
 }
 
-.fonte {
+.fonte{
     font-size: 20px;
 }
