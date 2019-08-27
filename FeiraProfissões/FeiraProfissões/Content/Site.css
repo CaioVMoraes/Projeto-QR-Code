@@ -123,3 +123,13 @@ body {
 #terceiroAndar:hover{
     opacity: 0.5;
 }
+
+.navegador {
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+
+.entry-content {
+    text-align:justify;
+}
