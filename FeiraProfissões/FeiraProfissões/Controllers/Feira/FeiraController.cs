@@ -34,5 +34,9 @@ namespace FeiraProfissões.Controllers.Feira
         {
             return View();
         }
+        public ActionResult Terreo()
+        {
+            return View();
+        }
     }
 }

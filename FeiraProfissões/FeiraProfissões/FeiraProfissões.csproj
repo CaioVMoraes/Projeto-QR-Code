@@ -156,7 +156,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\terreo.css" />
+    <Content Include="Content\Terreo.css" />
     <Content Include="Content\andar3.css" />
     <Content Include="Content\andar2.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -236,6 +236,7 @@
     <Content Include="Views\Feira\Avaliacao.cshtml" />
     <Content Include="Views\Feira\SegundoAndar.cshtml" />
     <Content Include="Views\Feira\PrimeiroAndar.cshtml" />
+    <Content Include="Views\Feira\Terreo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
