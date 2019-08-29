@@ -1,39 +1,39 @@
-﻿@{
+﻿
+@{
                 /**/
 
-                ViewBag.Title = "Home Page";
+                /**/
+
+                ViewBag.Title = "Index";
 }
 
 <div class="slideshow-container">
 
     <div class="mySlides fade">
-        <img src="https://acaonsfatima.org.br/wp-content/uploads/2019/08/popup-1.jpg" style="width:100%; height:210px">
+        <img src="https://acaonsfatima.org.br/wp-content/uploads/2019/08/popup-1.jpg" style="width:100%; height:230px">
     </div>
 
     <div class="mySlides fade">
-        <img src="~/Imagens/ISNSF-890x395.png" style="width:100%; height:210px">
+        <img src="~/Imagens/ISNSF-890x395.png" style="width:100%; height:230px">
     </div>
 
     <div class="mySlides fade">
-        <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/plateia.jpg" style="width:100%; height:210px">
+        <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/plateia.jpg" style="width:100%; height:230px">
     </div>
     <div class="mySlides fade">
-        <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/Cambridge-6.jpg" style="width:100%; height:210px">
+        <img src="https://s3.amazonaws.com/ibc-portal/wp-content/uploads/2017/06/28141023/novas-profissoes.jpg" style="width:100%; height:230px">
     </div>
 </div>
 
-<div style="text-align:center">
+<div style="text-align:center" class="navegador">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
 </div>
 
-<br />
-
 <div class="entry-content">
-    <p>&nbsp;</p>
-    <p style="text-align: left;">O <strong>primeiro evento</strong> organizado por nós especialmente para você que tem dúvidas sobre como funciona o <strong>Mundo do Trabalho</strong>, como se comportar, o que cada área realiza e muitas outras curiosidades que te ajudarão a conhecer o ambiente profissional!</p>
+    <p>O <strong>primeiro evento</strong> organizado por nós especialmente para você que tem dúvidas sobre como funciona o <strong>Mundo do Trabalho</strong>, como se comportar, o que cada área realiza e muitas outras curiosidades que te ajudarão a conhecer o ambiente profissional!</p>
     <p>Teremos vários <strong>temas especiais</strong> com atividades interativas de cada curso (<strong>inclusive o CEDESP</strong>), <strong>Sebo</strong> com livros de diversos assuntos e livros <strong>escritos pelo próprio Frei Xavier</strong>, além dos stands de alguns dos nossos parceiros.</p>
     <p>Veja nossa programação, marque a data na sua agenda e chame todos para participar.</p>
     <p><strong>Evento gratuito! Não perca!</strong></p>
@@ -41,25 +41,35 @@
 </div>
 
 <div class="salas">
-    <a href='@Url.Action("Terreo", "Feira")'><img id="terreo" src="~/Imagens/igmTerreo.jpg" style="width:100%" /></a>
+    <a href='@Url.Action("Terreo", "Feira")'><img id="terreo" src="~/Imagens/imgTerreo.jpg" style="width:100%" /></a>
     <a href='@Url.Action("PrimeiroAndar", "Feira")'><img id="primeiroAndar" src="~/Imagens/img1Andar.jpg" style="width:100%" /></a>
-    <a href='@Url.Action("SegundoAndar", "Feira")'><img id="segundoAndar" src="~/Imagens/img2Andar.jpg" style="width:100%" /></a>
+    <a href='@Url.Action("SegundoAndar", "Feira")'><img id="segundoAndar" src="~/Imagens/2Andar.jpeg" style="width:100%" /></a>
     <a href='@Url.Action("TerceiroAndar", "Feira")'><img id="terceiroAndar" src="~/Imagens/img3Andar.jpg" style="width:100%" /></a>
 </div>
 
 <br />
 
-<div>
-    <img src="~/Imagens/parceiros.png" style="width:100%; height:200px" />
+
+<h1 style="color: black; text-align:center;">Parceiros</h1>
+
+<div id="parceiros">
+    <img id="p1" src="~/Imagens/logo.png" />
+    <img id="p2" src="https://www.perfilcontabil.com.br/wp-content/uploads/2018/08/Prefeitura-de-S%C3%A3o-Paulo.png" />
+    <img id="p3" src="https://images.sympla.com.br/5c964feab47ab.png" />
+    <img id="p4" src="https://whatsrel.com.br/wp-content/uploads/2019/08/stb-logo-c%C3%B3pia.jpg" />
+    <img id="p5" src="https://www.expoopticabrasil.com/wp-content/uploads/2019/01/cropped-logo.png" />
+    <img id="p6" src="http://www.casion.com.br/img/social_logo_on.jpg" />
+    <img id="p7" src="http://159.203.175.70/wp-content/uploads/2015/04/logo-saopauloopencentre.jpg" />
+    <img id="p8" src="https://yt3.ggpht.com/a/AGF-l78k32uLjygj1iEGTzKhBVzwhEv3kit9f-OqoA=s900-c-k-c0xffffffff-no-rj-mo" />
+    <img id="p9" src="http://raizesds.com.br/wp-content/uploads/2016/10/sebrae-logo.jpg" />
+    <img id="p10" src="https://www.viacaograjau.com.br/wp-content/uploads/2019/05/viacao-grajau-logotipo.png" />
+    <img id="p11" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqvHlDuH2RyUjw3YoP9oT7a-oIOpCrwO7WIvhWcBivNMuE3FF" />
 </div>
 
 <br />
 
-<div class="entry-content" style="background-color: steelblue; color: white; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);">
-    <p>&nbsp;</p>
-    <h1>Como Chegar</h1>
-    <p>&nbsp;</p>
-</div>
+<h1 style="color: black; text-align:center;">Como Chegar</h1>
+<p>&nbsp;</p>
 
 <iframe src="https://maps.google.com/maps?q=av.%20coronel%20octaviano%20costa%2C%20463&t=&z=15&ie=UTF8&iwloc=&output=embed" height="450" frameborder="0" style="border:0; width:100%" allowfullscreen=""></iframe>
 

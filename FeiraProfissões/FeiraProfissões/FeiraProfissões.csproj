@@ -179,10 +179,10 @@
     <Content Include="Imagens\feira anuncio.jpg" />
     <Content Include="Imagens\feiraLogo.jpeg" />
     <Content Include="Imagens\Fundo.jpeg" />
-    <Content Include="Imagens\igmTerreo.jpg" />
     <Content Include="Imagens\img1Andar.jpg" />
     <Content Include="Imagens\img2Andar.jpg" />
     <Content Include="Imagens\img3Andar.jpg" />
+    <Content Include="Imagens\imgTerreo.jpg" />
     <Content Include="Imagens\ISNSF-890x395.png" />
     <Content Include="Imagens\logo.png" />
     <Content Include="Imagens\parceiros.png" />

@@ -129,7 +129,61 @@ body {
     margin-bottom: 12px;
 }
 
-
 .entry-content {
     text-align:justify;
+}
+
+#p1{
+    width: 75px;
+    height: 65px;
+}
+
+#p2 {
+    width: 100px;
+    height: 100px;
+}
+
+#p3 {
+    width: 100px;
+    height: 100px;
+}
+
+#p4 {
+    width: 75px;
+    height: 75px;
+}
+
+#p5 {
+    width: 100px;
+    height: 25px;
+}
+
+#p6 {
+    width: 100px;
+    height: 75px;
+}
+
+#p7 {
+    width: 100px;
+    height: 60px;
+}
+
+#p8 {
+    width: 100px;
+    height: 100px;
+}
+
+#p9 {
+    width: 100px;
+    height: 75px;
+}
+
+#p10 {
+    width: 100px;
+    height: 25px;
+}
+
+#p11 {
+    width: 100px;
+    height: 100px;
 }
