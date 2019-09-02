@@ -8,28 +8,31 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" id="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <span class="navbar-brand" style="color:lightgray" >Instituto Social NSF</span>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Feira", "Index", "Feira", new { style = "color:lightgray;" })</li>
-                    <li>@Html.ActionLink("Térreo", "Terreo", "Feira", new { style = "color:lightgray;" })</li>
-                    <li>@Html.ActionLink("1º Andar", "PrimeiroAndar", "Feira", new { style = "color:lightgray;" })</li>
-                    <li>@Html.ActionLink("2º Andar", "SegundoAndar", "Feira", new { style = "color:lightgray;" })</li>
-                    <li>@Html.ActionLink("3º Andar", "TerceiroAndar", "Feira", new { style = "color:lightgray;" })</li>
-                    <li>@Html.ActionLink("Avaliacao", "Avaliacao", "Feira", new { style = "color:lightgray;" })</li>
-                </ul>
+    <center>
+        <div class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand" style="color:lightgray; margin-left: 50px;">Feira de Profissões INSF</span>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Feira", "Index", "Feira", new { style = "color:lightgray;" })</li>
+                        <li>@Html.ActionLink("Térreo", "Terreo", "Feira", new { style = "color:lightgray;" })</li>
+                        <li>@Html.ActionLink("1º Andar", "PrimeiroAndar", "Feira", new { style = "color:lightgray;" })</li>
+                        <li>@Html.ActionLink("2º Andar", "SegundoAndar", "Feira", new { style = "color:lightgray;" })</li>
+                        <li>@Html.ActionLink("3º Andar", "TerceiroAndar", "Feira", new { style = "color:lightgray;" })</li>
+                        <li>@Html.ActionLink("Avaliacao", "Avaliacao", "Feira", new { style = "color:lightgray;" })</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </center>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -86,10 +89,10 @@
         <br />
 
         <div>
-        <img style="margin-left: 20px" class="pr-2" src="https://escolapinheiro.com.br/wp-content/themes/escola-pinheiro/dist/images/phone.png">
-        <span  class="d-inline-block">
-            (011) 5687-8876
-        </span>
+            <img style="margin-left: 20px" class="pr-2" src="https://escolapinheiro.com.br/wp-content/themes/escola-pinheiro/dist/images/phone.png">
+            <span class="d-inline-block">
+                (011) 5687-8876
+            </span>
         </div>
 
         <br />

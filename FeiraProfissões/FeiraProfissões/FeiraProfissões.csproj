@@ -176,7 +176,6 @@
     <Content Include="Imagens\contabilidade.jpg" />
     <Content Include="Imagens\curso-de-informatica-basica.jpg" />
     <Content Include="Imagens\dicas-de-apresentacao-1200x480.png" />
-    <Content Include="Imagens\feira anuncio.jpg" />
     <Content Include="Imagens\feiraLogo.jpeg" />
     <Content Include="Imagens\Fundo.jpeg" />
     <Content Include="Imagens\img1Andar.jpg" />
@@ -185,8 +184,6 @@
     <Content Include="Imagens\imgTerreo.jpg" />
     <Content Include="Imagens\ISNSF-890x395.png" />
     <Content Include="Imagens\logo.png" />
-    <Content Include="Imagens\parceiros.png" />
-    <Content Include="Imagens\programacao.png" />
     <Content Include="Imagens\Vocação.jpg" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
