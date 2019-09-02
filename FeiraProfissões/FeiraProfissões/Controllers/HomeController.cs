@@ -26,5 +26,31 @@ namespace FeiraProfissões.Controllers
 
             return View();
         }
+
+        public ActionResult Avaliacao()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Avaliacao(Models.tb_avaliacao avaliacao)
+        {
+            Business.FeiraBusiness business = new Business.FeiraBusiness();
+            business.Inserir(avaliacao);
+
+            return View();
+        }
+        public ActionResult SegundoAndar()
+        {
+            return View();
+        }
+        public ActionResult PrimeiroAndar()
+        {
+            return View();
+        }
+        public ActionResult Terreo()
+        {
+            return View();
+        }
     }
 }

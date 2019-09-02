@@ -1,9 +1,10 @@
-﻿
-@{
-    /**/
+﻿@{
+                /**/
 
-    ViewBag.Title = "Página Inicial";
+                ViewBag.Title = "Página Inicial";
 }
+
+<link href="~/Content/Site.css" rel="stylesheet" />
 
 <div class="slideshow-container">
 
@@ -18,16 +19,12 @@
     <div class="mySlides fade">
         <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/plateia.jpg" style="width:100%; height:230px">
     </div>
-    <div class="mySlides fade">
-        <img src="https://s3.amazonaws.com/ibc-portal/wp-content/uploads/2017/06/28141023/novas-profissoes.jpg" style="width:100%; height:230px">
-    </div>
 </div>
 
 <div style="text-align:center" class="navegador">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
 </div>
 
 <div class="entry-content">
@@ -39,16 +36,19 @@
 </div>
 
 <div class="salas">
+    <div id="tituloAndar">Térreo</div>
     <a href='@Url.Action("Terreo", "Feira")'><img id="terreo" src="~/Imagens/imgTerreo.jpg" style="width:100%" /></a>
+    <div id="tituloAndar">1º Andar</div>
     <a href='@Url.Action("PrimeiroAndar", "Feira")'><img id="primeiroAndar" src="~/Imagens/img1Andar.jpg" style="width:100%" /></a>
+    <div id="tituloAndar">2º Andar</div>
     <a href='@Url.Action("SegundoAndar", "Feira")'><img id="segundoAndar" src="~/Imagens/img2Andar.jpg" style="width:100%" /></a>
+    <div id="tituloAndar">3º Andar</div>
     <a href='@Url.Action("TerceiroAndar", "Feira")'><img id="terceiroAndar" src="~/Imagens/img3Andar.jpg" style="width:100%" /></a>
 </div>
 
 <br />
 
-
-<h1 style="color: black; text-align:center; font:bold">Parceiros</h1>
+<h1 style="color: black; text-align:center;">Parceiros</h1>
 
 <div id="parceiros">
     <img id="p1" src="~/Imagens/logo.png" />
@@ -66,10 +66,11 @@
 
 <br />
 
-<h1 style="color: black; text-align:center; font:bold">Como Chegar</h1>
+<p>&nbsp;</p>
+<h1 style="color: black; text-align:center;">Como Chegar</h1>
 <p>&nbsp;</p>
 
-<iframe class="mapa" src="https://maps.google.com/maps?q=av.%20coronel%20octaviano%20costa%2C%20463&t=&z=15&ie=UTF8&iwloc=&output=embed" height="450" frameborder="0" style="border:0; width:110%; margin-left:-15px" allowfullscreen="";></iframe>
+<iframe src="https://maps.google.com/maps?q=av.%20coronel%20octaviano%20costa%2C%20463&t=&z=15&ie=UTF8&iwloc=&output=embed" height="450" frameborder="0" style="border:0; width:110%; margin-left:-15px" allowfullscreen="" ;></iframe>
 
 <script>
     var slideIndex = 0;
@@ -89,6 +90,6 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 2000);
+        setTimeout(showSlides, 2500);
     }
 </script>

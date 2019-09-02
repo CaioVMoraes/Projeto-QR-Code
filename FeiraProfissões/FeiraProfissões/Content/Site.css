@@ -72,7 +72,11 @@ img {
     }
 }
 
-.estrelas input[type=radio]{
+.estrelas {
+    font-size: 130px;
+}
+
+.estrelas input[type=radio] {
     display: none;
 }
 
@@ -133,8 +137,12 @@ body {
     text-align:justify;
 }
 
+#parceiros{
+    text-align: center;
+}
+
 #p1{
-    width: 75px;
+    width: 60px;
     height: 65px;
 }
 
@@ -186,4 +194,11 @@ body {
 #p11 {
     width: 100px;
     height: 100px;
+}
+
+#tituloAndar {
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    margin-left: 20px;
 }

@@ -3,13 +3,14 @@
 @{
     ViewBag.Title = "Avaliacao";
 }
+<link href="~/Content/Site.css" rel="stylesheet" />
 
-    <img src="https://avaliacaodepessoas.com.br/wp-content/uploads/2016/07/avalia%C3%A7%C3%A3o.jpg.jpeg" style="width:120%; margin-left:-25px;" />
-    <h2 style="text-align:center; color:black">O que Achou da Feira?</h2>
+<img src="https://avaliacaodepessoas.com.br/wp-content/uploads/2016/07/avalia%C3%A7%C3%A3o.jpg.jpeg" style="width:120%; margin-left:-25px;" />
+    <h1 style="text-align:center; color:black"><b>O que Achou da Feira?</b></h1>
 
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
     <center>
 
         <div class="form-horizontal">
@@ -34,11 +35,6 @@
             </div>
             @Html.ValidationMessageFor(model => model.qt_estrelas, "", new { @class = "text-danger" })
 
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Create" class="btn btn-default" />
-                </div>
-            </div>
         </div>
     </center>
 }
