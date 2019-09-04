@@ -23,7 +23,7 @@
 }
 
 .Empreen {
-    background-color: RGB(162, 175, 184);
+    background-color: RGB(40, 129, 176);
     color: white;
     font-size: 1em;
     display: block;
@@ -35,7 +35,7 @@
 }
 
 .Eletrica {
-    background-color: RGB(162, 175, 184);
+    background-color: RGB(0,0,0);
     color: white;
     font-size: 1em;
     display: block;
@@ -47,7 +47,7 @@
 }
 
 .Tecnica {
-    background-color: RGB(0, 0, 0);
+    background-color: RGB(40, 129, 176);
     color: white;
     font-size: 1em;
     display: block;
@@ -77,8 +77,8 @@
     float: right;
     margin: 0 10px 10px;
 }
-.auto {
-    float: left;
+.Auto {
+    float: right;
     margin: 0 10px 10px;
 }
 
