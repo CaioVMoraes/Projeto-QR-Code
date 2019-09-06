@@ -19,10 +19,16 @@ namespace FeiraProfissões.Controllers.Feira
         }
 
         [HttpPost]
-        public ActionResult Avaliacao(Models.tb_avaliacao avaliacao)
+        public ActionResult Avaliacao(int estrela)
         {
             Business.FeiraBusiness business = new Business.FeiraBusiness();
+
+            Models.tb_avaliacao avaliacao = new Models.tb_avaliacao();
+            avaliacao.qt_estrelas = estrela;
+            avaliacao.ds_descricao = string.Empty;
+
             business.Inserir(avaliacao);
+            ViewData["mensagem"] = "Obrigado pela avaliação!";
 
             return View();
         }
