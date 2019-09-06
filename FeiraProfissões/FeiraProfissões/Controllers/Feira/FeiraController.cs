@@ -25,21 +25,23 @@ namespace FeiraProfissões.Controllers.Feira
 
             Models.tb_avaliacao avaliacao = new Models.tb_avaliacao();
             avaliacao.qt_estrelas = estrela;
-            avaliacao.ds_descricao = string.Empty;
 
             business.Inserir(avaliacao);
             ViewData["mensagem"] = "Obrigado pela avaliação!";
 
             return View();
         }
+
         public ActionResult SegundoAndar()
         {
             return View();
         }
+
         public ActionResult PrimeiroAndar()
         {
             return View();
         }
+
         public ActionResult Terreo()
         {
             return View();

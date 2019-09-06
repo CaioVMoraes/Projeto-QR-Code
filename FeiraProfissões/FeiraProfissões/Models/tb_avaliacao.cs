@@ -16,6 +16,5 @@ namespace FeiraProfissões.Models
     {
         public int id_avaliacao { get; set; }
         public int qt_estrelas { get; set; }
-        public string ds_descricao { get; set; }
     }
 }
