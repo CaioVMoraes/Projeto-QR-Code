@@ -3,12 +3,22 @@
 @{
     ViewBag.Title = "Avaliacao";
 }
+
+<script>
+    function EnviarAvaliacao() {
+        var form = document.getElementById('formAvaliacao');
+        form.submit();
+    }
+</script>
+
+
+
 <link href="~/Content/Site.css" rel="stylesheet" />
 
 <img src="https://avaliacaodepessoas.com.br/wp-content/uploads/2016/07/avalia%C3%A7%C3%A3o.jpg.jpeg" style="width:120%; margin-left:-25px;" />
     <h1 style="text-align:center; color:black"><b>O que Achou da Feira?</b></h1>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Avaliacao", "Feira", FormMethod.Post, new { id = "formAvaliacao" }))
 {
     @Html.AntiForgeryToken()
     <center>
@@ -19,10 +29,10 @@
                 <input type="radio" id="vazio" name="estrela" value="" checked />
 
                 <label for="estrela_um"><i class="fa"></i></label>
-                <input type="radio" id="estrela_um" name="estrela" value="1" />
+                <input type="radio" id="estrela_um" name="estrela" value="1" onclick="EnviarAvaliacao();" />
 
                 <label for="estrela_dois"><i class="fa"></i></label>
-                <input type="radio" id="estrela_dois" name="estrela" value="2" />
+                <input type="radio" id="estrela_dois" name="estrela" value="2" onclick="EnviarAvaliacao();" />
 
                 <label for="estrela_tres"><i class="fa"></i></label>
                 <input type="radio" id="estrela_tres" name="estrela" value="3" />
@@ -34,7 +44,9 @@
                 <input type="radio" id="estrela_cinco" name="estrela" value="5" />
             </div>
             @Html.ValidationMessageFor(model => model.qt_estrelas, "", new { @class = "text-danger" })
-
+        <div>
+            @ViewData["mensagem"]
+        </div>
         </div>
     </center>
 }
