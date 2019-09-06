@@ -197,7 +197,8 @@ body {
 }
 
 #tituloAndar {
-    font-size: 60px;
+    font-size: 32px;
+    font: bold;
     color: white;
     position: absolute;
     margin-left: 20px;
