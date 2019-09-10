@@ -113,10 +113,11 @@
 }
 
 .andar {
+
     font-size: 60px;
     color: white;
     position: absolute;
-    margin-left: 50px;
+    margin-left: 90px;
     margin-top: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
@@ -163,6 +164,12 @@
     text-align: justify;
 }
 
+.titulo {
+    text-align: center;
+    font-size: -15px;
+    font-weight: bold;
+    text-decoration: underline;
+}
 .Eletro {
     float: left;
     margin-left: 1px;
