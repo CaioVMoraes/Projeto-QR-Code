@@ -1,5 +1,5 @@
 ﻿.Info {
-    background-color: RGB(40, 129, 176);
+    background-color: RGB(24, 10, 128);
     color: white;
     font-size: 1em;
     display: block;
@@ -8,6 +8,10 @@
     margin: 0 auto;
     width: 100%;
     padding: 20px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right;
+    text-align: justify;
 }
 
 .Contab {
@@ -20,10 +24,15 @@
     margin: 0 auto;
     width: 100%;
     padding: 20px 0;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    text-align: justify;
 }
 
 .Empreen {
-    background-color: RGB(40, 129, 176);
+    background-color: RGB(24, 10, 128);
     color: white;
     font-size: 1em;
     display: block;
@@ -32,57 +41,88 @@
     margin: 0 auto;
     width: 100%;
     padding: 20px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: right;
+    text-align: justify;
 }
 
-.Eletrica {
-    background-color: RGB(0,0,0);
-    color: white;
-    font-size: 1em;
-    display: block;
-    clear: both;
-    float: none;
-    margin: 0 auto;
-    width: 100%;
-    padding: 20px 0;
-}
 
-.Tecnica {
-    background-color: RGB(40, 129, 176);
-    color: white;
-    font-size: 1em;
-    display: block;
-    clear: both;
-    float: none;
-    margin: 0 auto;
-    width: 100%;
-    padding: 20px 0;
-}
 
 .sala {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     position: center;
+    text-decoration: underline;
 }
+.sala1 {
+    color: white;
+    font-size: 25px;
+    position: center;
+    text-decoration: underline;
+}
+
 
 .figura1 {
     float: left;
-    margin: 0 10px 10px;
+    margin-left: -1px;
+    margin-right: 11px;
+    object-fit: fill;
+    background-size: cover;
+    width: initial;
+    height: initial;
 }
-
 .figura2 {
     float: right;
     margin: 0 10px 10px;
+    background-size: cover;
+    object-fit: fill;
 }
-.Eletro{
-    float: right;
-    margin: 0 10px 10px;
-}
-.Auto {
-    float: right;
-    margin: 0 10px 10px;
+.frase {
+    background-color: RGB(0, 0, 0);
+    color: white;
+    font-size: 1em;
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    text-align: justify;
 }
 
-.frase {
+
+.fonte {
+    text-align: center;
+    font-size: -15px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.andar_content {
+    margin-left: -15px;
+    width: 111%;
+}
+
+.texto {
+    text-align: justify;
+}
+
+.andar {
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.Eletrica {
     background-color: RGB(0, 0, 0);
     color: white;
     font-size: 1em;
@@ -95,10 +135,38 @@
     position: center;
     color: white;
     font-size: 15px;
-    padding-left: 0.5cm;
-    padding-right: 0.5cm;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
 }
 
-.fonte {
-    font-size: 20px;
+.Auto{
+    float: right;
+    margin: 0 10px 10px;
+    background-size: cover;
+    object-fit: fill;
+}
+
+.Tecnica {
+    background-color: RGB(24, 10, 128);
+    color: white;
+    font-size: 1em;
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    text-align: justify;
+}
+
+.Eletro {
+    float: left;
+    margin-left: 1px;
+    margin-right: 10px;
+    object-fit: fill;
+    background-size: cover;
 }
