@@ -186,6 +186,7 @@
     <Content Include="Imagens\imgTerreo.jpg" />
     <Content Include="Imagens\ISNSF-890x395.png" />
     <Content Include="Imagens\logo.png" />
+    <Content Include="Imagens\Predio Frei.jpg" />
     <Content Include="Imagens\Vocação.jpg" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

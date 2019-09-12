@@ -8,16 +8,13 @@
 
 <div class="slideshow-container">
 
-    <div class="mySlides fade">
-        <img src="~/Imagens/feiraLogo.jpeg" style="margin-left: 20%; margin-top: 5px; height:230px">
+    <div class="mySlides fade" style="background-image:url(../../Imagens/feiraLogo.jpeg)">
     </div>
 
-    <div class="mySlides fade">
-        <img src="~/Imagens/ISNSF-890x395.png" style="width:100%; height:230px;">
+    <div class="mySlides fade" style="background-image:url('../../Imagens/Predio Frei.jpg')">
     </div>
     
-    <div class="mySlides fade">
-        <img src="https://acaonsfatima.org.br/wp-content/uploads/2018/11/plateia.jpg" style="width:100%; height:230px">
+    <div class="mySlides fade" style="background-image: url(https://acaonsfatima.org.br/wp-content/uploads/2018/11/plateia.jpg)">
     </div>
 </div>
 
@@ -36,14 +33,31 @@
 </div>
 
 <div class="salas">
-    <div id="tituloAndar">Térreo</div>
-    <a href='@Url.Action("Terreo", "Feira")'><img id="terreo" src="~/Imagens/imgTerreo.jpg" style="width:100%" /></a>
-    <div id="tituloAndar">1º Andar</div>
-    <a href='@Url.Action("PrimeiroAndar", "Feira")'><img id="primeiroAndar" src="~/Imagens/img1Andar.jpg" style="width:100%" /></a>
-    <div id="tituloAndar">2º Andar</div>
-    <a href='@Url.Action("SegundoAndar", "Feira")'><img id="segundoAndar" src="~/Imagens/img2Andar.jpg" style="width:100%" /></a>
-    <div id="tituloAndar">3º Andar</div>
-    <a href='@Url.Action("TerceiroAndar", "Feira")'><img id="terceiroAndar" src="~/Imagens/img3Andar.jpg" style="width:100%" /></a>
+
+    <a href='@Url.Action("Terreo", "Feira")'>
+        <div id="terreo">
+            Térreo
+        </div>
+    </a>
+
+    <a href='@Url.Action("PrimeiroAndar", "Feira")'>
+        <div id="primeiroAndar">
+            1º Andar
+        </div>
+    </a>
+
+    <a href='@Url.Action("SegundoAndar", "Feira")'>
+        <div id="segundoAndar">
+            2º Andar
+        </div>
+    </a>
+
+    <a href='@Url.Action("TerceiroAndar", "Feira")'>
+        <div id="terceiroAndar">
+            3º Andar
+        </div>
+    </a>
+
 </div>
 
 <br />

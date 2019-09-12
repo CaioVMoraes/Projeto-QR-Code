@@ -19,16 +19,14 @@ textarea {
 
 .mySlides {
     display: none;
+    background-repeat: no-repeat;
+    height:880px;
+    background-size:cover;
+    background-position: top;
 }
 
 img {
     vertical-align: middle;
-}
-
-.slideshow-container {
-    max-width: 500px;
-    position: relative;
-    margin: auto;
 }
 
 .dot {
@@ -72,6 +70,14 @@ img {
     }
 }
 
+.imagemAvaliacao {
+    background-image: url(https://avaliacaodepessoas.com.br/wp-content/uploads/2016/07/avalia%C3%A7%C3%A3o.jpg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:400px; 
+}
+
 .estrelas{
     font-size: 150px;
 }
@@ -111,9 +117,57 @@ body {
     overflow-x: hidden;
 }
 
-.slideshow-container, .salas {
+.slideshow-container, .salas, .imagemAvaliacao{
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
+}
+
+#terreo {
+    background-image: url(../Imagens/imgTerreo.jpg);
+    background-position: center;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#primeiroAndar {
+    background-image: url(../Imagens/img1Andar.jpg);
+    background-position: center;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#segundoAndar {
+    background-image: url(../Imagens/img2Andar.jpg);
+    background-position: center;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#terceiroAndar {
+    background-image: url(../Imagens/img3Andar.jpg);
+    background-position: center;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 #terreo:hover{
@@ -200,16 +254,6 @@ body {
     height: 100px;
 }
 
-#tituloAndar {
-    font-size: 32px;
-    font: bold;
-    color: white;
-    position: absolute;
-    margin-left: 20px;
-}
-
-
-
 .popuptext {
     font-size: 50px
 }
@@ -274,5 +318,23 @@ body {
 
     to {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .mySlides {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 564px) {
+    .estrelas {
+       font-size:50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .mySlides{
+        height: 400px;
     }
 }
