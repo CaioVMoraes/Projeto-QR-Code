@@ -1,5 +1,5 @@
 ﻿.Info {
-    background-color: RGB(24, 10, 128);
+    background-color: RGB(0,93,134);
     color: white;
     font-size: 1em;
     display: block;
@@ -14,8 +14,11 @@
     text-align: justify;
 }
 
+.img{
+    background-color: royalblue;
+}
 .Contab {
-    background-color: RGB(0, 0, 0);
+    background-color: RGB(0,93,134);
     color: white;
     font-size: 1em;
     display: block;
@@ -31,8 +34,25 @@
     text-align: justify;
 }
 
+.sala4{
+    background-color: RGB(0, 0, 0);
+    color: white;
+    font-size: 1em;
+    display: block;
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    position: center;
+    color: white;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
 .Empreen {
-    background-color: RGB(24, 10, 128);
+    background-color: RGB(0,0,0);
     color: white;
     font-size: 1em;
     display: block;
@@ -124,7 +144,7 @@
 }
 
 .Eletrica {
-    background-color: RGB(0, 0, 0);
+    background-color: RGB(0,93,134);
     color: white;
     font-size: 1em;
     display: block;
@@ -141,15 +161,9 @@
     text-align: justify;
 }
 
-.Auto{
-    float: right;
-    margin: 0 10px 10px;
-    background-size: cover;
-    object-fit: fill;
-}
 
 .Tecnica {
-    background-color: RGB(24, 10, 128);
+    background-color: RGB(0, 0, 0);
     color: white;
     font-size: 1em;
     display: block;
