@@ -20,7 +20,6 @@ textarea {
 .mySlides {
     display: none;
     background-repeat: no-repeat;
-    height:880px;
     background-size:cover;
     background-position: top;
 }
@@ -79,7 +78,7 @@ img {
 }
 
 .estrelas{
-    font-size: 150px;
+    font-size: 50px;
 }
 
 .estrelas input[type=radio] {
@@ -322,25 +321,59 @@ body {
 }
 
 @media only screen and (max-width: 320px) {
-    .mySlides {
+    .mySlides{
         height: 350px;
     }
-}
 
-@media only screen and (max-width: 564px) {
-    .estrelas {
-       font-size:50px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .estrelas {
+    .estrelas{
         font-size: 50px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 360px) {
     .mySlides{
         height: 400px;
+    }
+
+    .estrelas{
+        font-size: 55px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .mySlides{
+        height: 410px;
+    }
+}
+
+@media only screen and (min-width: 411px) {
+    .mySlides{
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    .mySlides{
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mySlides{
+        height: 840px;
+    }
+
+    .estrelas{
+        font-size: 120px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .mySlides{
+        height: 1110px;
+    }
+
+     .estrelas {
+        font-size: 160px;
     }
 }
