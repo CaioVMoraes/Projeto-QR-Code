@@ -333,6 +333,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .estrelas {
+        font-size: 50px;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .mySlides{
         height: 400px;
