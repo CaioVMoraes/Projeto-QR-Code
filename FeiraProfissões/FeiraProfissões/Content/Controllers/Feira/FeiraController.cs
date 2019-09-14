@@ -46,5 +46,9 @@ namespace FeiraProfissões.Controllers.Feira
         {
             return View();
         }
+        public ActionResult TerceiroAndar()
+        {
+            return View();
+        }
     }
 }

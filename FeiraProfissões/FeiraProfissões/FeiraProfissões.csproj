@@ -244,6 +244,7 @@
     <Content Include="Views\Feira\SegundoAndar.cshtml" />
     <Content Include="Views\Feira\PrimeiroAndar.cshtml" />
     <Content Include="Views\Feira\Terreo.cshtml" />
+    <Content Include="Views\Feira\TerceiroAndar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
