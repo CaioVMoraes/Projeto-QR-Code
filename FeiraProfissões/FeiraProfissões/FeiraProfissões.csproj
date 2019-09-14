@@ -129,8 +129,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Business\FeiraBusiness.cs" />
-    <Compile Include="Content\Controllers\Feira\FeiraController.cs" />
-    <Compile Include="Content\Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Feira\FeiraController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Database\FeiraDatabase.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

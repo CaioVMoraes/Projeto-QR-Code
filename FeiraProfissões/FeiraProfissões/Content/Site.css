@@ -267,7 +267,7 @@ body {
     /* The actual popup (appears on top) */
     .popup .popuptext {
         visibility: hidden;
-        width: 600px;
+        width: 100%;
         background-color: #555;
         color: #fff;
         text-align: center;
@@ -276,8 +276,8 @@ body {
         position: absolute;
         z-index: 1;
         bottom: 125%;
-        left: 50%;
         margin-left: -80px;
+        font-size: 50px;
     }
 
         /* Popup arrow */
@@ -325,6 +325,10 @@ body {
         height: 350px;
     }
 
+    .popup .popuptext {
+        font-size: 30px;
+    }
+
     .estrelas{
         font-size: 50px;
     }
@@ -335,6 +339,10 @@ body {
         height: 400px;
     }
 
+    .popup .popuptext {
+        font-size: 30px;
+    }
+
     .estrelas{
         font-size: 55px;
     }
@@ -343,6 +351,10 @@ body {
 @media only screen and (min-width: 375px) {
     .mySlides{
         height: 410px;
+    }
+
+    .popup .popuptext {
+        font-size: 30px;
     }
 }
 
@@ -363,6 +375,10 @@ body {
         height: 840px;
     }
 
+    .popup .popuptext {
+        font-size: 50px;
+    }
+
     .estrelas{
         font-size: 120px;
     }
@@ -371,6 +387,10 @@ body {
 @media only screen and (min-width: 1024px) {
     .mySlides{
         height: 1110px;
+    }
+
+    .popup .popuptext {
+        font-size: 50px;
     }
 
      .estrelas {
