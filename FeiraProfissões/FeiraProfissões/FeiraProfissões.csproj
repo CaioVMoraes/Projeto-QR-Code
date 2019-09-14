@@ -129,8 +129,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Business\FeiraBusiness.cs" />
-    <Compile Include="Controllers\Feira\FeiraController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Content\Controllers\Feira\FeiraController.cs" />
+    <Compile Include="Content\Controllers\HomeController.cs" />
     <Compile Include="Database\FeiraDatabase.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -178,11 +178,16 @@
     <Content Include="Imagens\curso-de-informatica-basica.jpg" />
     <Content Include="Imagens\dicas-de-apresentacao-1200x480.png" />
     <Content Include="Imagens\empreendedorismo-ideia-nova.jpg" />
+    <Content Include="Imagens\entrevista.jpg" />
     <Content Include="Imagens\feiraLogo.jpeg" />
     <Content Include="Imagens\Fundo.jpeg" />
     <Content Include="Imagens\img1Andar.jpg" />
     <Content Include="Imagens\img2Andar.jpg" />
     <Content Include="Imagens\img3Andar.jpg" />
+    <Content Include="Imagens\imgAutoEletrica.jpg" />
+    <Content Include="Imagens\imgeletrotecnica.jpg" />
+    <Content Include="Imagens\imgJuridico.jpg" />
+    <Content Include="Imagens\imgmecanicaAuto.jpg" />
     <Content Include="Imagens\imgTerreo.jpg" />
     <Content Include="Imagens\imgvista.jpg" />
     <Content Include="Imagens\ISNSF-890x395.png" />
@@ -240,6 +245,7 @@
     <Content Include="Views\Feira\SegundoAndar.cshtml" />
     <Content Include="Views\Feira\PrimeiroAndar.cshtml" />
     <Content Include="Views\Feira\Terreo.cshtml" />
+    <Content Include="Views\Feira\TerceiroAndar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
