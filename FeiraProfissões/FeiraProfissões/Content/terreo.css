@@ -73,13 +73,11 @@
     color: white;
     font-size: 25px;
     position: center;
-    text-decoration: underline;
 }
 .sala1 {
     color: white;
     font-size: 25px;
     position: center;
-    text-decoration: underline;
 }
 
 
@@ -173,7 +171,6 @@
     text-align: center;
     font-size: -15px;
     font-weight: bold;
-    text-decoration: underline;
 }
 .Eletro {
     float: left;
