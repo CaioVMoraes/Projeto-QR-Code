@@ -159,6 +159,7 @@
     margin-bottom: 50px;
 }
 
+
 .Eletrica {
     background-color: RGB(0,0,0);
     color: white;
@@ -172,7 +173,7 @@
     position: center;
     color: white;
     font-size: 15px;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 25px;
     text-align: justify;
 }
