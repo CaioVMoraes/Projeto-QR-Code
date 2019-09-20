@@ -14,5 +14,11 @@ namespace FeiraProfissões.Database
 
             db.SaveChanges();
         }
+
+        public void InserirLog (Models.tb_log_navegacao log)
+        {
+            db.tb_log_navegacao.Add(log);
+            db.SaveChanges();
+        }
     }
 }

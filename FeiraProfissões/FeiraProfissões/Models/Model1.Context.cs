@@ -26,5 +26,6 @@ namespace FeiraProfissões.Models
         }
     
         public virtual DbSet<tb_avaliacao> tb_avaliacao { get; set; }
+        public virtual DbSet<tb_log_navegacao> tb_log_navegacao { get; set; }
     }
 }

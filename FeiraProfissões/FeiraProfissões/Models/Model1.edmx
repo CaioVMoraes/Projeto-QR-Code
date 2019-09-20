@@ -11,9 +11,21 @@
           </Key>
           <Property Name="id_avaliacao" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="qt_estrelas" Type="int" Nullable="false" />
+          <Property Name="dt_avaliacao" Type="datetime" Precision="0" />
+          <Property Name="ip_address" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="tb_log_navegacao">
+          <Key>
+            <PropertyRef Name="id_log" />
+          </Key>
+          <Property Name="id_log" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dt_log" Type="datetime" Precision="0" />
+          <Property Name="nm_page" Type="varchar" MaxLength="30" />
+          <Property Name="ip_address" Type="varchar" MaxLength="30" />
         </EntityType>
         <EntityContainer Name="db_a4c265_feira19ModelStoreContainer">
           <EntitySet Name="tb_avaliacao" EntityType="Self.tb_avaliacao" Schema="db_a4c265_feira19" store:Type="Tables" />
+          <EntitySet Name="tb_log_navegacao" EntityType="Self.tb_log_navegacao" Schema="db_a4c265_feira19" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -21,6 +33,7 @@
       <Schema Namespace="db_a4c265_feira19Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="db_a4c265_feira19Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tb_avaliacao" EntityType="db_a4c265_feira19Model.tb_avaliacao" />
+          <EntitySet Name="tb_log_navegacao" EntityType="db_a4c265_feira19Model.tb_log_navegacao" />
         </EntityContainer>
         <EntityType Name="tb_avaliacao">
           <Key>
@@ -28,6 +41,17 @@
           </Key>
           <Property Name="id_avaliacao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="qt_estrelas" Type="Int32" Nullable="false" />
+          <Property Name="dt_avaliacao" Type="DateTime" />
+          <Property Name="ip_address" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tb_log_navegacao">
+          <Key>
+            <PropertyRef Name="id_log" />
+          </Key>
+          <Property Name="id_log" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dt_log" Type="DateTime" />
+          <Property Name="nm_page" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ip_address" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -38,8 +62,20 @@
           <EntitySetMapping Name="tb_avaliacao">
             <EntityTypeMapping TypeName="db_a4c265_feira19Model.tb_avaliacao">
               <MappingFragment StoreEntitySet="tb_avaliacao">
+                <ScalarProperty Name="ip_address" ColumnName="ip_address" />
+                <ScalarProperty Name="dt_avaliacao" ColumnName="dt_avaliacao" />
                 <ScalarProperty Name="qt_estrelas" ColumnName="qt_estrelas" />
                 <ScalarProperty Name="id_avaliacao" ColumnName="id_avaliacao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_log_navegacao">
+            <EntityTypeMapping TypeName="db_a4c265_feira19Model.tb_log_navegacao">
+              <MappingFragment StoreEntitySet="tb_log_navegacao">
+                <ScalarProperty Name="ip_address" ColumnName="ip_address" />
+                <ScalarProperty Name="nm_page" ColumnName="nm_page" />
+                <ScalarProperty Name="dt_log" ColumnName="dt_log" />
+                <ScalarProperty Name="id_log" ColumnName="id_log" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

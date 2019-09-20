@@ -12,11 +12,11 @@ namespace FeiraProfissões.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_avaliacao
+    public partial class tb_log_navegacao
     {
-        public int id_avaliacao { get; set; }
-        public int qt_estrelas { get; set; }
-        public Nullable<System.DateTime> dt_avaliacao { get; set; }
+        public int id_log { get; set; }
+        public Nullable<System.DateTime> dt_log { get; set; }
+        public string nm_page { get; set; }
         public string ip_address { get; set; }
     }
 }
