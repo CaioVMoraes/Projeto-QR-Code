@@ -94,7 +94,6 @@ namespace FeiraProfissões.Controllers.Feira
             log.dt_log = DateTime.Now;
             log.nm_page = "Terceiro Andar";
             log.ip_address = Request.UserHostAddress;
-
             business.InserirLog(log);
 
             return View();
